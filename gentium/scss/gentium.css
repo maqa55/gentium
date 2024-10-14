@@ -1,0 +1,1001 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+#header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+}
+#header a {
+  color: white;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#header .logo a {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+#header ul li a {
+  padding: 35px 20px;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+}
+#header ul li a:hover::before {
+  width: 20%;
+}
+#header ul li a::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  transition: 0.5s;
+  width: 0;
+  height: 3px;
+  background-color: crimson;
+}
+#header ul li:nth-child(8) a::before {
+  display: none;
+}
+#header ul li:nth-child(1) a::before {
+  width: 20%;
+}
+
+#digital {
+  background-color: black;
+  position: relative;
+  padding: 7rem 0;
+}
+#digital .boxes {
+  width: 87%;
+  height: 120vh;
+  background-image: url(https://gentium.pixerex.com/wp-content/uploads/2019/01/hero_02.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+#digital .boxes .top-text {
+  position: absolute;
+  left: 10%;
+  top: 25%;
+  color: white;
+}
+#digital .boxes .top-text hr {
+  width: 100px;
+  height: 3px;
+  background-color: crimson;
+  border: none;
+  margin-bottom: 40px;
+  opacity: 1;
+}
+#digital .boxes .top-text h1 {
+  font-size: 4rem;
+  width: 70%;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#digital .boxes .top-text a {
+  padding: 20px 25px;
+  border: 1px solid crimson;
+  display: inline-block;
+  margin-top: 20px;
+  color: wheat;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+#digital .boxes .top-text a:hover::before {
+  width: 100%;
+}
+#digital .boxes .top-text a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: crimson;
+  z-index: -1;
+  transition: 0.5s;
+}
+#digital .future {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+}
+#digital .future::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: crimson;
+  left: 50%;
+  bottom: -30px;
+  transform: translate(-50%);
+}
+#digital .future::before {
+  content: "";
+  position: absolute;
+  background-color: crimson;
+  bottom: -20px;
+  right: 11%;
+  width: 350px;
+  height: 80px;
+  z-index: -1;
+}
+#digital .future .box {
+  position: relative;
+  width: 31%;
+  margin: 0 10px;
+  padding: 70px 30px;
+  background-color: rgb(26, 25, 25);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: 0.5s;
+}
+#digital .future .box:nth-child(3):hover {
+  box-shadow: rgba(0, 0, 0, 0.205) 2.5px 2.5px 3.2px;
+}
+#digital .future .box:nth-child(1) {
+  width: 31%;
+  margin: 0 10px;
+  padding: 70px 30px;
+  background-color: crimson;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#digital .future .box:nth-child(1) i {
+  padding: 30px 0;
+  font-size: 2.3rem;
+}
+#digital .future .box:nth-child(1) h1 {
+  font-size: 1.8rem;
+}
+#digital .future .box:nth-child(1) hr {
+  width: 50px;
+  margin: 5px 0 10px;
+}
+#digital .future .box:hover {
+  background-color: crimson;
+}
+#digital .future .box i {
+  padding: 30px 0;
+  font-size: 2.3rem;
+}
+#digital .future .box h1 {
+  font-size: 1.8rem;
+}
+#digital .future .box hr {
+  width: 50px;
+  margin: 5px 0 10px;
+  opacity: 1;
+}
+
+#s {
+  padding: 6rem 0;
+}
+#s .services {
+  position: relative;
+}
+#s .services::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: crimson;
+  left: 50%;
+  bottom: -20%;
+}
+#s .services .servicesmain {
+  width: 90%;
+  margin: auto;
+}
+#s .services .servicesmain .boxmain div {
+  width: 30%;
+  margin: 20px;
+  background-color: #F3F3F3;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  transform: translateX(0px);
+}
+#s .services .servicesmain .boxmain div:hover {
+  background-color: crimson;
+}
+#s .services .servicesmain .boxmain div:hover::before {
+  color: white;
+  transform: translateX(10px);
+}
+#s .services .servicesmain .boxmain div:hover h3 {
+  color: white;
+  transform: translateX(40px);
+}
+#s .services .servicesmain .boxmain div:nth-child(1)::after {
+  content: "\f441";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(2)::after {
+  content: "\f02d";
+  position: absolute;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(3)::after {
+  content: "\f201";
+  position: absolute;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(4)::after {
+  content: "\f328";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(5)::after {
+  content: "\f5ae";
+  position: absolute;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(6)::after {
+  content: "\f075";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(7)::after {
+  content: "\f0a8";
+  position: absolute;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(8)::after {
+  content: "\f0eb";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+}
+#s .services .servicesmain .boxmain div:nth-child(9)::after {
+  content: "\f002";
+  position: absolute;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  font-size: 0;
+  transition: 0.3s ease;
+  left: 0;
+  color: rgba(243, 243, 243, 0.2274509804);
+  overflow: hidden;
+}
+#s .services .servicesmain .boxmain div:nth-child(-n+9):hover:nth-child(-n+9)::after {
+  font-size: 4rem;
+  left: -5%;
+}
+#s .services .servicesmain .boxmain div::before {
+  content: "\f061";
+  position: absolute;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  right: 20px;
+  font-size: 25px;
+  color: #888686;
+  transform: translateX(0px);
+  transition: 0.3s;
+}
+#s .services .servicesmain .boxmain div h3 {
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 15px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#s .services .servicesmain .toptext {
+  padding: 50px 0;
+}
+#s .services .servicesmain .toptext hr {
+  background-color: crimson;
+  opacity: 1;
+  height: 2px;
+  width: 40px;
+  border: none;
+}
+#s .services .servicesmain .toptext h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 2.9rem;
+  padding: 30px 0 20px;
+}
+#s .services .servicesmain .toptext h6 {
+  font-weight: 700;
+  color: crimson;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#s1 {
+  padding: 5rem 0;
+}
+#s1 .box1 {
+  position: relative;
+}
+#s1 .box1::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: crimson;
+  left: 50%;
+  bottom: -30%;
+}
+#s1 .box1 .box2 .box3 hr {
+  background-color: crimson;
+  height: 2px;
+  opacity: 1;
+  border: none;
+  width: 40px;
+}
+#s1 .box1 .box2 .box3 h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 2.9rem;
+  padding: 30px 0 20px;
+}
+#s1 .box1 .box2 .box3 h6 {
+  font-weight: 700;
+  color: crimson;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s1 .box1 .box2 a {
+  padding: 10px 30px;
+  border: 2px solid crimson;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  height: 50%;
+  margin: auto 0;
+}
+#s1 .box1 .box2 a:hover {
+  color: white;
+}
+#s1 .box1 .box2 a:hover::before {
+  width: 100%;
+}
+#s1 .box1 .box2 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: crimson;
+  z-index: -1;
+  transition: 0.5s;
+}
+#s1 .box1 .box4 {
+  margin-top: 50px;
+  position: relative;
+}
+#s1 .box1 .box4 div {
+  margin-top: 30px;
+  display: flex;
+  min-height: 70vh;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+#s1 .box1 .box4 div div {
+  width: 33%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+#s1 .box1 .box4 div div .box5 {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  width: 100%;
+  height: 115%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#s1 .box1 .box4 div div .box5 h3 {
+  transform: translateX(0);
+  opacity: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s1 .box1 .box4 div div .box5 h6 {
+  font-weight: bolder;
+  transition: 0.3s;
+  transform: translateX(0);
+  opacity: 0;
+  color: gray;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s1 .box1 .box4 div div .box5:hover::before {
+  opacity: 0;
+}
+#s1 .box1 .box4 div div .box5:hover h3,
+#s1 .box1 .box4 div div .box5:hover h6 {
+  opacity: 1;
+  transform: translateX(10px);
+}
+#s1 .box1 .box4 div div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7058823529);
+  opacity: 0;
+  z-index: 2;
+  transition: 0.3;
+}
+#s1 .box1 .box4 div div img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: 0.3;
+  transform: scale(1);
+  z-index: 1;
+  transition: 0.5s;
+}
+#s1 .box1 .box4 div div:hover::before {
+  opacity: 1;
+  cursor: pointer;
+}
+#s1 .box1 .box4 div div:hover img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+#s2 {
+  padding: 8rem 0;
+  position: relative;
+}
+#s2::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: crimson;
+  left: 50%;
+  bottom: 2%;
+}
+#s2 div .box8 {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+#s2 div .box8 h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s2 div .box8 h5 {
+  font-size: 1.2rem;
+  color: whitesmoke;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+#s2 div .box8 .box88 {
+  width: 66%;
+  height: 100%;
+  position: relative;
+}
+#s2 div .box8 .box88 div {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  z-index: 1;
+}
+#s2 div .box8 .box888 {
+  width: 31%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#s2 div .box8 .box888 div {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  z-index: 1;
+}
+#s2 div .box8 .box8888 {
+  position: absolute;
+  width: 31%;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+#s2 div .box8 .box8888 div {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  z-index: 1;
+}
+#s2 div .box8 img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+#s2 div .box8 img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+#s2 div .box7 {
+  padding: 2rem 0;
+}
+#s2 div .box7 div p {
+  width: 60%;
+  color: gray;
+}
+#s2 div .box7 div .text1 hr {
+  background-color: crimson;
+  height: 2px;
+  opacity: 1;
+  border: none;
+  width: 40px;
+}
+#s2 div .box7 div .text1 h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 2.9rem;
+  padding: 30px 0 20px;
+}
+#s2 div .box7 div .text1 h6 {
+  font-weight: 700;
+  color: crimson;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s2 .box9 {
+  display: flex;
+  margin: 40px auto;
+  width: 90%;
+}
+#s2 .box9 div h2 {
+  font-size: 23px;
+  font-weight: bold;
+}
+#s2 .box9 div h6 {
+  margin-top: 35px;
+  color: grey;
+  width: 80%;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+#s3 {
+  padding: 5rem 0 0;
+}
+#s3 .box10 {
+  width: 90%;
+  margin: auto;
+}
+#s3 .box10 .box11 {
+  margin: 40px 0;
+}
+#s3 .box10 .box11 hr {
+  width: 50px;
+}
+#s3 .box10 .box11 hr:first-child {
+  width: 50px;
+  height: 3px;
+  background-color: crimson;
+  border: none;
+  opacity: 1;
+}
+#s3 .box10 .box11 h1 {
+  padding: 30px 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s3 .box10 .box11 h6 {
+  font-weight: 700;
+  color: crimson;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s3 .box10 .box11 h5 {
+  padding: 60px 0;
+  color: grey;
+  font-weight: 100;
+  font-size: 22px;
+}
+#s3 .box10 .box11 h6:last-child {
+  color: black;
+  font-size: 13px;
+  margin: 40px 0;
+}
+#s3 .box10:nth-child(1) {
+  position: relative;
+}
+#s3 .box10:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: crimson;
+  z-index: -1;
+  left: 35%;
+  bottom: -3%;
+}
+#s3 .box10 div {
+  width: 45%;
+}
+#s3 .box10 div img {
+  width: 90%;
+  height: 100%;
+}
+
+.box12 {
+  padding: 5rem 0;
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+.box12::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: crimson;
+  left: 50%;
+  bottom: -20%;
+}
+.box12 div {
+  width: 90%;
+  margin: auto;
+}
+.box12 div img {
+  padding: 27px;
+}
+
+#s4 {
+  padding: 7rem 0;
+}
+#s4 .box13 .box14 {
+  text-align: center;
+}
+#s4 .box13 .box14 h2 {
+  padding: 20px 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s4 .box13 .box14 h6 {
+  font-weight: 700;
+  color: crimson;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s4 .box13 .box15 {
+  margin-top: 40px;
+  position: relative;
+}
+#s4 .box13 .box15::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  background-color: crimson;
+  left: 50%;
+  bottom: -30%;
+}
+#s4 .box13 .box15 .box16 {
+  margin-top: 30px;
+  display: flex;
+  min-height: 70vh;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+#s4 .box13 .box15 .box16 div {
+  width: 33%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+#s4 .box13 .box15 .box16 div .box17 {
+  position: absolute;
+  z-index: 3;
+  top: 70%;
+  left: 10%;
+  transform: translate(-70%, -10%);
+  text-align: center;
+  transition: 0.3s;
+  width: 80%;
+  transform: translateY(20px);
+}
+#s4 .box13 .box15 .box16 div .box17::after {
+  content: "\f061";
+  position: absolute;
+  font-weight: 600;
+  font-family: "Font Awesome 6 Free";
+  font-size: 25px;
+  color: #888686;
+  transition: 0.5s;
+  top: 20%;
+  left: 50%;
+  transform: translate(-20%, -50%);
+  transform: translateY(20px);
+  opacity: 0;
+}
+#s4 .box13 .box15 .box16 div .box17 h3 {
+  padding: 10px 0;
+  font-weight: bold;
+  color: white;
+  font-size: 1.3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s4 .box13 .box15 .box16 div .box17 h6 {
+  color: white;
+  font-size: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s4 .box13 .box15 .box16 div .box17:hover::before {
+  opacity: 0;
+}
+#s4 .box13 .box15 .box16 div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7058823529);
+  opacity: 0;
+  z-index: 1;
+  transition: 0.3s;
+}
+#s4 .box13 .box15 .box16 div img {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: 0.3;
+  transform: scale(1);
+  z-index: 0;
+  transition: 0.5s;
+}
+#s4 .box13 .box15 .box16 div:hover {
+  cursor: pointer;
+}
+#s4 .box13 .box15 .box16 div:hover .box17 {
+  z-index: 3;
+  transform: translateY(0);
+}
+#s4 .box13 .box15 .box16 div:hover .box17::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+#s4 .box13 .box15 .box16 div:hover::before {
+  opacity: 1;
+}
+#s4 .box13 .box15 .box16 div:hover img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+#s5 {
+  padding: 8rem 0;
+  background-color: #1B1B1B;
+}
+#s5 .box18 h2 {
+  color: white;
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#s5 .box18 a {
+  padding: 15px 30px;
+  border: 2px solid crimson;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  height: 100%;
+  margin: auto 0;
+}
+#s5 .box18 a:hover::before {
+  width: 100%;
+}
+#s5 .box18 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: crimson;
+  z-index: -1;
+  transition: 0.5s;
+}
+#s5 .box18 .box19 {
+  gap: 10px;
+}
+#s5 .box18 .box19 i {
+  color: white;
+  border: 2px solid crimson;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+#s5 .box18 .box19 .i {
+  padding: 10px 15px;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+#s5 .box18 .box19 .i:hover {
+  transform: translateY(0);
+  color: crimson;
+  cursor: pointer;
+}
+#s5 .box18 .box19 .i1 {
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+#s5 .box18 .box19 .i1:hover {
+  transform: translateY(0);
+  color: crimson;
+  cursor: pointer;
+}
+#s5 .box18 .box19 .i2 {
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+#s5 .box18 .box19 .i2:hover {
+  transform: translateY(0);
+  color: crimson;
+  cursor: pointer;
+}
+#s5 .box18 .box19 .i3 {
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+#s5 .box18 .box19 .i3:hover {
+  transform: translateY(0);
+  color: crimson;
+  cursor: pointer;
+}
+
+.box20 {
+  padding: 2rem 0;
+  background-color: #161616;
+}
+.box20 div div:hover h4,
+.box20 div div:hover p {
+  color: crimson;
+  cursor: pointer;
+}
+.box20 div div h4 {
+  transition: 0.3s;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.box20 div div p {
+  transition: 0.3s;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.box21 {
+  padding: 1rem 0;
+  background-color: black;
+}
+.box21 div .box22 p {
+  color: white;
+  font-size: 15px;
+  margin: 10px;
+  position: relative;
+  transition: 0.3s;
+}
+.box21 div .box22 p::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0;
+  bottom: -5px;
+  background-color: crimson;
+  transition: 0.3s;
+}
+.box21 div .box22 p:hover {
+  color: crimson;
+  cursor: pointer;
+}
+.box21 div .box22 p:hover::before {
+  width: 60px;
+}
+.box21 div div p {
+  color: grey;
+  font-size: 14px;
+}
+.box21 div div p span {
+  color: white;
+  font-size: 14px;
+}/*# sourceMappingURL=gentium.css.map */
